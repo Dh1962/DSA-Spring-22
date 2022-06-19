@@ -46,7 +46,7 @@ int main()
       // NOTE: 2 SONGS WILL NOT HAVE THE SAME NAME IN OUR CODES!
       int idx = -1;
       for(int a = 0; a < numSongs; a++)
-        if(strcmp(name, songs[a]->name) == 0)
+        if(strcmp(name, songs[a]->Name) == 0)
           idx = a;
       // NO SUCH SONG
       if(idx == -1)
@@ -88,7 +88,7 @@ int main()
       if(s == NULL)
         printf("No song playing\n");
       else
-        printf("Song %s is playing right now\n", s->name);
+        printf("Song %s is playing right now\n", s->Name);
     }
     else if(strcmp(command, "EXIT") == 0)
       break;
